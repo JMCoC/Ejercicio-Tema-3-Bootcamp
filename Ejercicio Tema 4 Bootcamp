@@ -1,0 +1,52 @@
+public class Main {
+    public static void main(String[] args) {
+        int numeroif = 10;
+        int numerowhile = -3;
+        int numerodowhile = 3;
+        String estacion = "LLUVIA";
+        var contador=0;
+        var contadordowhile=0;
+        if (numeroif <0) {
+            System.out.println("Es negativo");
+        }else if (numeroif == 0){
+            System.out.println("Es igual a 0");
+        }else{
+            System.out.println("Es positivo");
+        }
+        System.out.println("-----------------");
+        while (numerowhile<3){
+            System.out.println(numerowhile);
+            numerowhile++;
+            contador++;
+        }
+        System.out.println("Se ejecuto "+contador+" veces");
+        System.out.println("-----------------");
+        do {
+            System.out.println(numerodowhile);
+            numerodowhile++;
+            contadordowhile++;
+        } while (numerodowhile<3);
+        System.out.println("Se ejecuto "+contadordowhile+" vez");
+        System.out.println("-----------------");
+        for (int numerofor=0;numerofor<=3;numerofor++){
+            System.out.println(numerofor);
+        }
+        System.out.println("-----------------");
+        switch (estacion){
+            case "INVIERNO":
+                System.out.println("Estamos en invierno");
+                break;
+            case "VERANO":
+                System.out.println("Estamos en verano");
+                break;
+            case "PRIMAVERA":
+                System.out.println("Estamos en primavera");
+                break;
+            case "OTOÑO":
+                System.out.println("Estamos en otoño");
+                break;
+            default:
+                System.out.println("No es una estacion");
+        }
+    }
+}
